@@ -9,7 +9,7 @@ const client = new Client()
     .setProject(PROJECT_ID)
 
     const database = new Databases(client);
-
+    console.log("Appwrite Endpoint:", import.meta.env.VITE_APPWRITE_ENDPOINT);
 
 export const updatesearchCount = async (searchTerm, movie) => {
  try{
